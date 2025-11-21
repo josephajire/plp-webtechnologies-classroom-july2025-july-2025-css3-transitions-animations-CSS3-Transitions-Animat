@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture Solutions</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="main-header">
+        <h1>Smart Agriculture Solutions</h1>
+        <p>Empowering farmers with innovation, data and technology</p>
+
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#services">Our Services</a>
+            <a href="#calculator">Yield Calculator</a>
+            <a href="#combined-section">Interactive Tools</a>
+        </nav>
+    </header>
+
+    <!-- ABOUT AGRICULTURE -->
+    <section id="about" class="section">
+        <h2>About Modern Agriculture</h2>
+        <p>
+            Agriculture today goes beyond traditional farming. Farmers now use data-driven techniques,
+            drone surveillance, soil analysis, improved seeds, and irrigation technologies to boost productivity.
+            Sustainable farming ensures food security, reduces environmental impact, and improves livelihoods,
+            especially in rural communities.
+        </p>
+
+        <div class="agri-cards">
+            <div class="card">
+                <h3>Crop Farming</h3>
+                <p>Modern crop farming leverages improved varieties, soil testing, irrigation and timely fertilizer application.</p>
+            </div>
+
+            <div class="card">
+                <h3>Livestock Management</h3>
+                <p>Technology improves animal health monitoring, feed formulation and breeding efficiency.</p>
+            </div>
+
+            <div class="card">
+                <h3>Smart Irrigation</h3>
+                <p>Automated irrigation systems ensure optimal water use and reduce crop stress.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section alt">
+        <h2>Our Agricultural Services</h2>
+
+        <ul class="service-list">
+            <li>Soil Testing & Fertility Management</li>
+            <li>Farm Training & Extension Support</li>
+            <li>Access to Improved Seeds & Farm Inputs</li>
+        </ul>
+    </section>
+
+    <!-- SECTION 2: JavaScript Functions -->
+    <section id="calculator" class="section">
+        <h2>Agricultural Yield Calculator</h2>
+        <p>Estimate your crop yield based on number of acres.</p>
+
+        <input type="number" id="acreInput" placeholder="Enter acres">
+        <button onclick="showYield()" class="calculate-btn">Calculate Yield</button>
+
+        <p id="yieldResult" class="result"></p>
+    </section>
+
+    <!-- SECTION 3: Combined JS + CSS Animation Trigger -->
+    <section id="combined-section" class="section alt">
+        <h2>Interactive Animation Tools</h2>
+
+        <button id="animateBtn" class="trigger-btn">Animate Harvest Box</button>
+        <div id="triggerBox"></div>
+
+        <button id="openModalBtn" class="trigger-btn">Show Farming Tip</button>
+    </section>
+
+    <!-- MODAL POPUP -->
+    <div id="modal">
+        <div class="modal-content">
+            <h3>Smart Farming Tip</h3>
+            <p>Use organic matter such as compost and manure to improve soil structure and fertility.</p>
+            <button id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright &copy; 2025 Smart Agriculture Solutions — Growing the Future Together. Developed by Joseph Ajireloja.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* -----------------------------------------------------------
+   GENERAL PAGE DESIGN
+------------------------------------------------------------*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5fff2;
+    color: #1d2d25;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center; /* center content */
+}
+
+.section.alt {
+    background: #e6ffe2;
+}
+
+/* -----------------------------------------------------------
+   HEADER & NAVIGATION
+------------------------------------------------------------*/
+.main-header {
+    background: linear-gradient(to right, #1e8e2f, #28a745);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.6;
+}
+
+/* -----------------------------------------------------------
+   AGRI CARDS
+------------------------------------------------------------*/
+.agri-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center-aligned cards */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* -----------------------------------------------------------
+   SERVICES LIST
+------------------------------------------------------------*/
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* -----------------------------------------------------------
+   CALCULATOR
+------------------------------------------------------------*/
+.calculate-btn {
+    background: #28a745;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background: #1e7e34;
+}
+
+/* -----------------------------------------------------------
+   CSS ANIMATIONS
+------------------------------------------------------------*/
+.trigger-btn {
+    padding: 10px 20px;
+    margin: 20px 10px 0 0;
+    background: #ff9800;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#triggerBox {
+    width: 150px;
+    height: 150px;
+    background: #d4a106;
+    border-radius: 5px;
+    margin: 20px auto 0 auto; /* center box */
+}
+
+/* JS-triggered animation */
+.animate-move {
+    animation: moveBox 2s forwards;
+    pointer-events: none; /* FIX: prevent blocking clicks */
+}
+
+@keyframes moveBox {
+    from { transform: translateY(0); opacity: 1; }
+    to   { transform: translateY(120px); opacity: 0; }
+}
+
+/* -----------------------------------------------------------
+   MODAL POPUP
+------------------------------------------------------------*/
+#modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    margin: 150px auto;
+    border-radius: 10px;
+    text-align: center;
+    animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-60px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+/* -----------------------------------------------------------
+   FOOTER
+------------------------------------------------------------*/
+footer {
+    background: #1e8e2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
